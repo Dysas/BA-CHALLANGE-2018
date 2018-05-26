@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/css.css">
+    <title>BA</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <form>
+                Loan amount:
+                <br>
+                <input type="number" class="loan" name="loan">
+                <br> Interest rate:
+                <br>
+                <input type="number" class="interestRate" name="interestRate">
+                <br> Starting date:
+                <br>
+                <input type="date" class="date" name="date">
+                <br> Period:
+                <br>
+                <input type="number" class="period" name="period">
+                <br>
+                <br>
+                <div id="results"></div>
+                <button id="export" data-export="export">Export to CSV</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment #</th>
+                        <th>Payment date</th>
+                        <th>Remaining amount</th>
+                        <th>Principal payment</th>
+                        <th>Interest payment</th>
+                        <th>Total payment</th>
+                        <th>Interest rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="/lib/jquery.tabletoCSV.js"></script>
+    <script src="/calc.js"></script>
+</body>
+
+</html>
